@@ -31,6 +31,7 @@ npm install -g bower gulp
 ```
 
 ## Setup basic project
+
 - Command prompt to projects folder
 - 
 ```shell
