@@ -24,6 +24,7 @@ Create a repository on GitHub to save our project.
 - Login to GitHub
 - Create a new repository "Resumay"
 - Initialize with a readme
+- Add node .gitignore
 - Create repository
 - Copy https clone url
 - Command prompt to projects folder
