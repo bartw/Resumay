@@ -32,10 +32,12 @@ npm install -g bower gulp
 
 ## Setup basic project
 - Command prompt to projects folder
-- ```shell
+- 
+```shell
 npm init
 ```
-- ```shell
+- 
+```shell
 bower init
 ```
 - create file ".bowerrc"
@@ -44,7 +46,8 @@ bower init
 	"directory": "/app/bower_components"
 }
 ```
-- ```shell
+- 
+```shell
 npm install bower gulp gulp-connect --save
 ```
 - create file "gulpfile.js"
@@ -65,7 +68,8 @@ gulp.task('connect', function () {
 ```html
 Hello world
 ```
-- ```shell
+- 
+```shell
 gulp connect
 ```
 - Browse to (http://localhost:8888)
