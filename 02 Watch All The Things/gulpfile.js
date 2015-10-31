@@ -38,10 +38,17 @@ gulp.task("connect", function () {
     });
 });
 
+gulp.task("watch", function() {
+    gulp.watch("./app/js/**/*.js", ["lint", "js"]);
+    gulp.watch("./app/less/**/*.less", ["less"]);
+    gulp.watch("./app/**/*.html", ["html"]); 
+});
+
 gulp.task("build", function() {
     runSequence(
         ["clean"],
         ["lint", "less", "js", "html"]
     );
 });
-gulp.task("default", ["build", "connect"]);
+
+gulp.task("default", ["build", "watch", "connect"]);

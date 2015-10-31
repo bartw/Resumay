@@ -137,6 +137,13 @@ gulp.task("html", function () {
 ```
 
 ## Add watches for less, javascript and html
+```javascript
+gulp.task("watch", function() {
+    gulp.watch("./app/js/**/*.js", ["lint", "js"]);
+    gulp.watch("./app/less/**/*.less", ["less"]);
+    gulp.watch("./app/**/*.html", ["html"]); 
+});
+```
 
 ## Combine everything
 
@@ -158,5 +165,11 @@ gulp.task("build", function() {
 
 - Add a default task to the the gulpfile.js to build and start a server
 ```javascript
-gulp.task("default", ["build", "connect"]);
+gulp.task("default", ["build", "watch", "connect"]);
 ```
+
+## Try it
+- Run "gulp" from the commandline
+- Browse to <http://localhost:8888>
+- Change something in html, less or js
+- Refresh <http://localhost:8888> and see the changes
