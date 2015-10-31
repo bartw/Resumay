@@ -1,9 +1,4 @@
-# Resumay
-
-## Intro
-
-Resumay is an ongoing project to learn all kinds of new things.
-I will try to document as I go.
+# 01 Getting Started
 
 ## Software
 
@@ -46,6 +41,8 @@ npm install -g bower gulp
 Minimal setup of the Resumay project to start a server and show a Hello world.
 
 - Open a command prompt to projects folder
+
+- Create a new folder "01 Getting Started".
 
 - Create "package.json"
 

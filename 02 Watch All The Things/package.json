@@ -1,0 +1,24 @@
+{
+  "name": "resumay",
+  "version": "1.0.0",
+  "description": "Resumay is an ongoing project to learn all kinds of new things.\r I will try to document as I go.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartw/Resumay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartw/Resumay/issues"
+  },
+  "homepage": "https://github.com/bartw/Resumay#readme",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}
