@@ -27,6 +27,10 @@ gulp.task("js", function () {
         .pipe(minify())
         .pipe(gulp.dest("./dist/js"));
 });
+gulp.task('components', function () {
+  gulp.src('./app/bower_components/**')
+    .pipe(gulp.dest('dist/bower_components'));
+});
 gulp.task("html", function () {
     return gulp.src("./app/**/*.html")
         .pipe(gulp.dest("./dist"));
@@ -41,13 +45,14 @@ gulp.task("connect", function () {
 gulp.task("watch", function() {
     gulp.watch("./app/js/**/*.js", ["lint", "js"]);
     gulp.watch("./app/less/**/*.less", ["less"]);
-    gulp.watch("./app/**/*.html", ["html"]); 
+    gulp.watch("./app/bower_components/**", ["components"]);
+    gulp.watch("./app/**/*.html", ["html"]);
 });
 
 gulp.task("build", function() {
     runSequence(
         ["clean"],
-        ["lint", "less", "js", "html"]
+        ["lint", "less", "js", "components", "html"]
     );
 });
 

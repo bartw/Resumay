@@ -3,7 +3,7 @@
 ## Setting things up
 
 - Create a new folder "02 Watch All The Things"
-- Copy the contents of "01 Getting Started" expect "node_modules"
+- Copy the contents of "01 Getting Started" except "node_modules"
 - Install the missing modules
 ```shell
 npm install
@@ -20,7 +20,7 @@ npm install
 	<title>Resumay</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body id=>
+<body>
 	<h1>Resumay</h1>
 	<p id="content" class="green">
 		Resumay is built with Visual Studio Code.
@@ -98,9 +98,9 @@ gulp.task("less", function () {
 
 ## Lint, minify and copy javascript
 
-- Install gulp-eslint
+- Install gulp-jshint
 ```shell
-npm install gulp-eslint --save
+npm install gulp-jshint --save
 ```
 
 - Install gulp-minify
