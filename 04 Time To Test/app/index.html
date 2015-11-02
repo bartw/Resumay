@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Resumay</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="Resumay">
+	<div ng-controller="MyFirstController">
+		<h1>Resumay</h1>
+		<p id="content" class="{{color}}">
+			Resumay is built with Visual Studio Code, Node, Bower, Gulp and Angular.
+		</p>
+		<button ng-click="switchColor()">Switch color</button>
+	</div>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
