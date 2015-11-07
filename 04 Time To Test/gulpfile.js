@@ -4,6 +4,7 @@ var less = require("gulp-less");
 var minifyCss = require("gulp-minify-css");
 var jshint = require("gulp-jshint");
 var minify = require("gulp-minify");
+var karma = require('karma').Server;
 var connect = require('gulp-connect');
 var runSequence = require('run-sequence');
 
@@ -35,6 +36,14 @@ gulp.task("html", function () {
     return gulp.src("./app/**/*.html")
         .pipe(gulp.dest("./dist"));
 });
+gulp.task("test", function(done) {
+    new karma({
+        configFile: __dirname + "/karma.conf.js",
+        singleRun: true
+    }, function () {
+        done();
+    }).start();
+});
 gulp.task("connect", function () {
     connect.server({
         root: "dist/",
@@ -47,12 +56,13 @@ gulp.task("watch", function() {
     gulp.watch("./app/less/**/*.less", ["less"]);
     gulp.watch("./app/bower_components/**", ["components"]);
     gulp.watch("./app/**/*.html", ["html"]);
+    gulp.watch(["./app/test/**/*Spec.js", "./app/js/**/*.js"], ["test"]);
 });
 
 gulp.task("build", function() {
     runSequence(
         ["clean"],
-        ["lint", "less", "js", "components", "html"]
+        ["lint", "less", "js", "components", "html", "test"]
     );
 });
 
