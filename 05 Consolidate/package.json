@@ -1,0 +1,19 @@
+{
+  "name": "resumay",
+  "version": "1.0.0",
+  "description": "Resumay is an ongoing project to learn all kinds of new things. I will try to document as I go.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartw/Resumay.git"
+  },
+  "author": "Bart Wijnants",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartw/Resumay/issues"
+  },
+  "homepage": "https://github.com/bartw/Resumay#readme"
+}

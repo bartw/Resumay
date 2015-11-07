@@ -40,8 +40,7 @@ var karma = require('gulp-karma');
 gulp.task('test', function() {
   // Be sure to return the stream
   // NOTE: Using the fake './foobar' so as to run the files
-  // listed in karma.conf.js INSTEAD of what was passed to
-  // gulp.src !
+  // listed in karma.conf.js INSTEAD of what was passed to gulp.src !
   return gulp.src('./foobar')
     .pipe(karma({
       configFile: 'karma.conf.js',

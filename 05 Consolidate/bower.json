@@ -1,0 +1,18 @@
+{
+  "name": "resumay",
+  "description": "Resumay is an ongoing project to learn all kinds of new things. I will try to document as I go.",
+  "main": "index.html",
+  "authors": [
+    "Bart Wijnants"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bartw/Resumay",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

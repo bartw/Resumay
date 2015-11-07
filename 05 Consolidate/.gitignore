@@ -1,0 +1,5 @@
+#ignore the dist folder
+dist
+
+#ignore the bower_components
+app/bower_components
